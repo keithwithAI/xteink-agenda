@@ -1,0 +1,5 @@
+# Local secrets — copy secrets.h.example to secrets.h and fill in real values.
+src/secrets.h
+
+# PlatformIO build artifacts (also in /tmp — belt-and-braces)
+.pio/

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>X4 Font Preview — All Available Fonts</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;700&family=Literata:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Source+Serif+4:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f0f0f0; padding: 20px; font-family: system-ui; max-width: 560px; margin: 0 auto; }
+h1 { font-size: 18px; margin-bottom: 4px; }
+.sub { font-size: 11px; color: #666; margin-bottom: 24px; line-height: 1.5; }
+.section-label { font-size: 11px; font-weight: 700; color: #999; letter-spacing: 0.1em; text-transform: uppercase; margin: 24px 0 12px; }
+.card { background: white; border: 1.5px solid #000; margin-bottom: 16px; overflow: hidden; }
+.card-header { background: #000; color: #fff; padding: 6px 14px; font-size: 10px; font-family: monospace; display: flex; justify-content: space-between; align-items: center; }
+.badge { font-size: 9px; padding: 2px 6px; border-radius: 3px; font-family: system-ui; }
+.badge-current { background: #4caf50; color: white; }
+.badge-new { background: #2196f3; color: white; }
+.badge-serif { background: #ff9800; color: white; }
+.badge-sans { background: #9c27b0; color: white; }
+.badge-access { background: #e91e63; color: white; }
+.card-body { padding: 20px 24px; }
+.sample { margin-bottom: 10px; }
+.sample-label { font-size: 9px; color: #aaa; font-family: monospace; margin-bottom: 2px; }
+.sample-text { color: #000; line-height: 1.4; }
+.passive-preview { background: #000; color: #fff; padding: 24px; margin: 8px 0; border-radius: 4px; }
+.passive-preview .date { font-size: 10px; opacity: 0.6; margin-bottom: 16px; }
+.passive-preview .headline { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.passive-preview .time { font-size: 14px; opacity: 0.7; }
+.passive-preview .next { font-size: 10px; opacity: 0.5; margin-top: 20px; }
+.note { font-size: 10px; color: #888; margin-top: 8px; line-height: 1.4; }
+hr { border: none; border-top: 1px solid #ddd; margin: 6px 0; }
+</style>
+</head>
+<body>
+
+<h1>X4 E-Ink Font Comparison</h1>
+<p class="sub">Preview of all available + downloadable fonts for the Xteink X4.<br>
+Each card shows the font at multiple sizes + a passive screen simulation.<br>
+Web equivalents used — actual e-ink rendering at 220 PPI will be sharper.</p>
+
+<div class="section-label">Built-in Fonts (already converted)</div>
+
+<!-- Bookerly -->
+<div class="card">
+<div class="card-header">BOOKERLY <div><span class="badge badge-current">CURRENT</span> <span class="badge badge-serif">SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Noto Serif',Georgia,serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Noto Serif',Georgia,serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Noto Serif',Georgia,serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Noto Serif',Georgia,serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Amazon Kindle's serif. Excellent at small sizes on e-ink. Warm, readable character. Sizes 12-18pt.</div>
+</div></div>
+
+<!-- Noto Sans -->
+<div class="card">
+<div class="card-header">NOTO SANS <span class="badge badge-sans">SANS-SERIF</span></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Noto Sans',Arial,sans-serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Noto Sans',Arial,sans-serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Noto Sans',Arial,sans-serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Noto Sans',Arial,sans-serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Google's universal sans. Clean, neutral, excellent unicode coverage. Sizes 8-18pt.</div>
+</div></div>
+
+<!-- Ubuntu -->
+<div class="card">
+<div class="card-header">UBUNTU <span class="badge badge-sans">SANS-SERIF</span></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">10pt regular</div><div class="sample-text" style="font-family:'Ubuntu',sans-serif; font-size:11px;">TASK &middot; Monday 14 Apr &middot; +3 more today</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Ubuntu',sans-serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="note">Canonical's friendly sans. Only 10pt and 12pt available (uncompressed, fast). Good for labels.</div>
+</div></div>
+
+<!-- OpenDyslexic -->
+<div class="card">
+<div class="card-header">OPENDYSLEXIC <span class="badge badge-access">ACCESSIBILITY</span></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Comic Sans MS',cursive; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">14pt bold</div><div class="sample-text" style="font-family:'Comic Sans MS',cursive; font-size:17px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="note">Weighted letter bottoms prevent rotation confusion. Wider than others. Sizes 8-14pt. (Preview uses Comic Sans as approximation.)</div>
+</div></div>
+
+<div class="section-label">New Fonts (downloaded, ready to convert)</div>
+
+<!-- Literata -->
+<div class="card">
+<div class="card-header">LITERATA <div><span class="badge badge-new">NEW</span> <span class="badge badge-serif">SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Literata',Georgia,serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Literata',Georgia,serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Literata',Georgia,serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Literata',Georgia,serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Google's serif designed specifically for e-ink screens (Google Play Books). Variable optical sizing. More modern than Bookerly.</div>
+</div></div>
+
+<!-- Inter -->
+<div class="card">
+<div class="card-header">INTER <div><span class="badge badge-new">NEW</span> <span class="badge badge-sans">SANS-SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Inter',sans-serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Inter',sans-serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Inter',sans-serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Inter',sans-serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Rasmus Andersson's sans-serif. Extremely legible at small sizes. Tall x-height. The go-to modern UI font.</div>
+</div></div>
+
+<!-- Source Serif -->
+<div class="card">
+<div class="card-header">SOURCE SERIF 4 <div><span class="badge badge-new">NEW</span> <span class="badge badge-serif">SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Source Serif 4',Georgia,serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Source Serif 4',Georgia,serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Source Serif 4',Georgia,serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Source Serif 4',Georgia,serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Adobe's open-source serif. Pairs beautifully with Source Sans/Code. Transitional style, very polished.</div>
+</div></div>
+
+<!-- Charter / XCharter -->
+<div class="card">
+<div class="card-header">CHARTER (XCHARTER) <div><span class="badge badge-new">NEW</span> <span class="badge badge-serif">SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:Charter,'Bitstream Charter',Georgia,serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:Charter,'Bitstream Charter',Georgia,serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:Charter,'Bitstream Charter',Georgia,serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:Charter,'Bitstream Charter',Georgia,serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Matthew Carter's classic, designed for 1-bit rendering at low resolution. THE font for e-ink. Originally mentioned in your DESIGN.md.</div>
+</div></div>
+
+<!-- Palatino -->
+<div class="card">
+<div class="card-header">PALATINO <div><span class="badge badge-new">NEW</span> <span class="badge badge-serif">SERIF</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:Palatino,'Palatino Linotype','Book Antiqua',serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:Palatino,'Palatino Linotype','Book Antiqua',serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:Palatino,'Palatino Linotype','Book Antiqua',serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:Palatino,'Palatino Linotype','Book Antiqua',serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Hermann Zapf's masterpiece. Calligraphic warmth, wide proportions. Extracted from macOS system fonts.</div>
+</div></div>
+
+<!-- Atkinson Hyperlegible -->
+<div class="card">
+<div class="card-header">ATKINSON HYPERLEGIBLE <div><span class="badge badge-new">NEW</span> <span class="badge badge-access">ACCESSIBILITY</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Braille Institute's sans-serif. Maximum character differentiation (Il1, O0, etc.). Great for glanceable task names.</div>
+</div></div>
+
+<!-- Atkinson Hyperlegible Next -->
+<div class="card">
+<div class="card-header">ATKINSON HYPERLEGIBLE NEXT <div><span class="badge badge-new">NEW</span> <span class="badge badge-access">ACCESSIBILITY</span></div></div>
+<div class="card-body">
+<div class="sample"><div class="sample-label">12pt regular</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:14px;">Sleep 22:00 - 07:30 &middot; 570 min</div></div>
+<div class="sample"><div class="sample-label">12pt bold</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:14px; font-weight:700;">Explore our 100s of integrations</div></div>
+<div class="sample"><div class="sample-label">18pt bold</div><div class="sample-text" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:24px; font-weight:700;">Deep work: API refactor</div></div>
+<div class="passive-preview" style="font-family:'Atkinson Hyperlegible',Arial,sans-serif;">
+<div class="date">Monday 14 Apr</div>
+<div class="headline">Sleep</div>
+<div class="time">22:00 - 07:30</div>
+<div class="next">Next: Explore our 100s of integrations 09:00</div>
+</div>
+<div class="note">Updated 2024 version of Atkinson Hyperlegible. Refined letterforms, same hyperlegibility principles. Variable font support.</div>
+</div></div>
+
+<div style="margin-top: 24px; font-size: 11px; color: #666; line-height: 1.5;">
+<b>To use a new font:</b> Run <code>fontconvert.py</code> to generate C headers, then add to firmware.<br>
+<b>Chaparral Pro:</b> Adobe commercial font — needs Creative Cloud or a purchased license. Not included.<br>
+<b>Recommendation:</b> Serif (Literata or Charter) for body text + a clean sans (Inter or Atkinson) for UI labels.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=480, height=800, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Noto+Serif:ital,wght@0,400;0,600;0,700;0,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "surface": "#f9f9f9",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Noto Serif"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            width: 480px;
+            height: 800px;
+            margin: 0;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        /* Custom spacing to match the 28px margin mandate */
+        .margin-canvas {
+            padding: 28px;
+        }
+        /* High contrast E-ink optimization */
+        .e-ink-heavy {
+            -webkit-font-smoothing: none;
+            text-rendering: optimizeLegibility;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="e-ink-heavy bg-white">
+<!-- Passive Glance Screen for Xteink X4 -->
+<main class="flex flex-col h-full w-full justify-between margin-canvas">
+<!-- Top Section: Date & Anchor -->
+<header class="pt-8">
+<div class="font-label text-[14px] font-medium tracking-[0.1em] text-primary uppercase">
+                Monday 14 Oct
+            </div>
+</header>
+<!-- Center Section: Primary Focus -->
+<section class="flex flex-col flex-grow justify-center py-12">
+<div class="mb-2">
+<span class="font-label text-[12px] font-bold tracking-widest text-primary">TASK</span>
+</div>
+<!-- Large bold serif for the primary task -->
+<h1 class="font-headline text-[48px] leading-[1.1] font-black tracking-tight text-primary mb-6">
+                Deep work: API refactor
+            </h1>
+<div class="flex flex-col gap-1">
+<span class="font-label text-[16px] font-medium text-primary">
+                    14:00 – 15:30
+                </span>
+<span class="font-label text-[14px] text-primary/70">
+                    90 min
+                </span>
+</div>
+</section>
+<!-- Bottom Section: The Next Item & Remaining Stats -->
+<footer class="pb-8">
+<!-- Asymmetric Divider (Full width, no border rule applied: using a solid black block for structure) -->
+<div class="h-[2px] w-full bg-primary mb-8"></div>
+<div class="space-y-6">
+<div>
+<span class="font-label text-[12px] font-bold tracking-widest text-primary block mb-3">NEXT</span>
+<h2 class="font-headline text-[22px] font-semibold leading-tight text-primary">
+                        Standup with the team
+                    </h2>
+<p class="font-label text-[14px] mt-1">
+                        15:30 – 15:45
+                    </p>
+</div>
+<!-- Very Bottom Meta Data -->
+<div class="pt-4">
+<div class="inline-flex items-center bg-surface-container px-3 py-1 rounded-sm">
+<span class="font-label text-[12px] font-medium text-primary">
+                            +3 more today
+                        </span>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<!-- Visual Texture Layer: Suble Grain (Decorative) -->
+<div class="pointer-events-none fixed inset-0 opacity-[0.03] mix-blend-multiply" data-alt="subtle paper fiber texture with organic grain and light speckled pattern for e-ink aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCI5fF6Y8JXySg6cH4EEA_KuVZ54EX4VBHxHXGXxRowXpw8SxgG9yISjht6o95nOrFO-K40UDzPkz4YXRB4J08sYatkrs2oiVHY4XxT18H2aWzpaDaayUXPvnBOsZnd8gLJAmxAxgqI-Rro3ahiyKz2QHm1enDZjSLr8AKd18gGYowSYWmKPuA-oYw5s8cfyy7BB0-XrWwkmkBcQIqgWVGMPNvO_7boBQpjVxCg7ZJyJlyQrOzXTJndIxfQ52ZCcZ4lhHJgG0Rx8A');">
+</div>
+</body></html>

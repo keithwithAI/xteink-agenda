@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+service-account.json
+firmware/src/secrets.h
+
+# macOS
+.DS_Store
+
+# PlatformIO build
+firmware/.pio/
+
+# OTA binary + manifest (rebuilt from source)
+firmware/ota/firmware.bin
+firmware/ota/manifest.json
+
+# Downloaded font zips
+firmware/lib/EpdFont/builtinFonts/source/custom/*.zip

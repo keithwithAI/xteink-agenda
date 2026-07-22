@@ -1,0 +1,51 @@
+[project]
+name = "xteink-agenda"
+version = "1.0.0"
+description = "Your Google Calendar on an Xteink X4 e-ink reader — server + ESP32-C3 firmware"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "google-api-python-client>=2.100.0",
+    "google-auth>=2.25.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.27.0",
+]
+
+[project.scripts]
+xteink-agenda = "xteink_agenda.main:cli"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+    "httpx>=0.27.0",  # For fastapi.testclient.TestClient
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+# Vendored firmware libs + design mockups keep their upstream style.
+extend-exclude = ["firmware", "design"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP", "SIM", "RUF"]
+ignore = [
+    "E501",    # line too long — handled by formatter if needed
+    "B008",    # function calls in defaults — FastAPI uses this for Depends()
+    "SIM102",  # nested if — sometimes clearer than combined condition
+    "SIM105",  # use contextlib.suppress — not always clearer
+    "SIM108",  # ternary suggestion — often less readable
+    "SIM117",  # nested with — sometimes intentional
+    "RUF001",  # ambiguous unicode in strings — en-dashes are fine
+    "RUF003",  # ambiguous unicode in comments — en-dashes are fine
+    "RUF005",  # list concat vs spread — both readable
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011", "F841"]
